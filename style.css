@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 600px; /* Imposta la larghezza desiderata */
+    margin: 20px auto;
+  }
+
+  #carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel-img {
+    width: 100%;
+    height: auto;
+  }
