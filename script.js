@@ -66,5 +66,18 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+function navigate(direction) {
+  if (direction === 'next') {
+    currentIndex = (currentIndex + 1) % carouselData.length;
+  } else if (direction === 'prev') {
+    currentIndex = (currentIndex - 1 + carouselData.length) % carouselData.length;
+  }
+  updateCarousel();
+}
+
+document.querySelector('#arrowNext').addEventListener('click', () => navigate('next'));
+document.querySelector('#arrowPrev').addEventListener('click', () => navigate('prev'));
+
+
 
 
