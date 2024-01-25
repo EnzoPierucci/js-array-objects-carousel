@@ -4,24 +4,53 @@
     box-sizing: border-box;
 }
 
-#carousel-container {
-    position: relative;
-    overflow: hidden;
-    width: 600px; /* Imposta la larghezza desiderata */
-    margin: 20px auto;
-  }
+#carouselContainer {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
 
-  #carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
+#carouselSlideWrapper {
+  position: relative;
+}
 
-  .carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-  }
+#carouselText {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  padding: 20px;
+}
 
-  .carousel-img {
-    width: 100%;
-    height: auto;
-  }
+#carouselThumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#carouselContainer img {
+  width: 100%;
+  display: block;
+}
+
+#prevButton, #nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+}
+
+#prevButton {
+  left: 0;
+}
+
+#nextButton {
+  right: 0;
+}
